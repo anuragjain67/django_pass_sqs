@@ -1,4 +1,4 @@
-""" Django view for sqs task queue ""'
+""" Django view for sqs task  """
 
 # How to use it
 #_task_map = { "task_name":task_handler}

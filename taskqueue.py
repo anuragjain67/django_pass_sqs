@@ -1,19 +1,16 @@
-'''
-Created on 21-Jan-2014
+""" Django view for sqs task queue ""'
 
-@author: sripathikrishnan
-'''
-
-
+# How to use it
 #_task_map = { "task_name":task_handler}
 # task_queue = SqsTaskQueue(queue_name)
 # or 
-# task_queue = MutlProcessQueue(_task_map)
+# task_queue = MultiProcessQueue(_task_map)
 # If SQS Queue, also define the following in urls.py
 # url(r'^tasks/', SqsHandler.as_view(task_map=_tasks_map)),
+
 # Finally, you execute a task like this -
 # task_queue.add("send_fresher_email_registration", fresher)
-#Note: ACCESS KEY and SECRET KEY need to set in enviornment variable
+# Note: ACCESS KEY and SECRET KEY need to set in enviornment variable
 
 import json
 from django.views.generic.base import View
